@@ -6,6 +6,7 @@ services:
     mem_limit: 4000m
     cpus: 4
     restart: always
+    env_file: .env
     ports:
       - ${APP_PORT}:9000
     volumes:
